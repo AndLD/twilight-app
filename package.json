@@ -1,0 +1,7 @@
+{
+  "author": "<Andrii Larionov, andrey.larionov.me@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "prettier": "^3.3.3"
+  }
+}
