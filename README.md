@@ -2,8 +2,8 @@
 
 ## Tech Stack
 
-Clientside: Vite + React + TypeScript + Ant Design.
-Backend: Node.js + Express + TypeScript.
+- Clientside: Vite + React + TypeScript + Ant Design.
+- Backend: Node.js + Express + TypeScript.
 
 ## Installation Guide
 
