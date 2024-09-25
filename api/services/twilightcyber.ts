@@ -1,6 +1,7 @@
 import axios from 'axios'
 import { sleep } from '../utils/utils'
 import { getLogger } from '../utils/logger'
+import { TwilightcyberDomainInfectionsPostBody } from '../utils/types'
 
 const TWILIGHTCYBER_API_URL = process.env.TWILIGHTCYBER_API_URL
 const TWILIGHTCYBER_API_KEY = process.env.TWILIGHTCYBER_API_KEY
@@ -18,14 +19,7 @@ const PAGE_SIZE = 400
 const logger = getLogger('services/twilightcyber')
 
 async function getDomainInfections(domain: string, next?: string, i: number = 0) {
-  const body: {
-    domains?: string[]
-    root_domains?: string[]
-    app_domains?: string[]
-    email_domains?: string[]
-    next?: string
-    size?: number
-  } = {
+  const body: TwilightcyberDomainInfectionsPostBody = {
     domains: [domain],
     root_domains: [domain],
     app_domains: [domain],
